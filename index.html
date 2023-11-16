@@ -39,7 +39,7 @@
                 user-select: none;
             }
             .main_page {
-                margin-top: -15px;
+                margin-top: -1.92%;
             }
             .wrapper {
                 transition: transform 2s ease;
@@ -90,7 +90,7 @@
             }
             .head h1 {
                 font-size: 3rem;
-                margin-bottom: 10px;
+                margin-bottom: 1.5%;
             }
             .head p {
                 font-size: 1.2rem;
@@ -155,11 +155,11 @@
             }
             .about_links {
                 font-size: 20px;
-                margin-top: 20px;
+                margin-top: 2.5%;
             }
             .about_links a {
                 color: gray;
-                margin-right: 20px;
+                margin-right: 2.5%;
                 text-decoration: none;
             }
             .about_links a:hover {
@@ -169,7 +169,7 @@
             .projects {
                 position: fixed;
                 display: none;
-                height: 2700px;
+                height: 360%;
                 color: white;
                 transition: transform 2s ease, opacity 1s ease;
             }
@@ -179,20 +179,25 @@
                 padding-left: 27%;
                 padding-right: 27%;
             }
+            .image1 {
+                width: 750px;
+                height: 450px;
+            }
+            .slider1 {
+                width: 750px;
+                height: 450px;
+            }
             .image1:hover {
                 animation: wave 1s infinite;
             }
-
-
-
 
             
             .scrollline {
                 position: absolute;
                 border: 1px solid gray;
-                top: 80px;
-                left: 1350px;
-                height: 650px;
+                top: 10%;
+                left: 87%;
+                height: 82%;
                 z-index: 100;
                 opacity: 0;
                 transition: opacity 2.5s ease;
@@ -200,10 +205,10 @@
             .scrollcontainer {
                 position: absolute;
                 background-color: black;
-                width: 100px;
-                height: 100px;
-                top: 80px;
-                left: 1300px;
+                width: 6.15%;
+                height: 12.7%;
+                top: 10%;
+                left: 84%;
                 z-index: 100;
                 opacity: 0;
                 cursor: grab;
@@ -217,23 +222,23 @@
                 display: inline;
             }
             .scrollcontent {
-                padding-top: 30px;
-                padding-left: 45px;
+                padding-top: 30%;
+                padding-left: 45%;
                 transition: all 1s ease;
             }
             .scrollcount {
-                margin-top: -25px;
-                margin-left: -20px;
+                margin-top: -25%;
+                margin-left: -20%;
                 transition: all 0.3s ease;
             }
             .scrolldash {
-                margin-left: 4px;
+                margin-left: 4%;
                 transform: rotate(45deg);
                 transition: all 0.3s ease;
             }
             .scrolltotal {
-                margin-top: 30px;
-                margin-left: 20px;
+                margin-top: 30%;
+                margin-left: 20%;
                 transition: all 0.3s ease;
             }
             .toparrow {
@@ -252,6 +257,7 @@
                 height: 900px;
                 overflow: hidden;
             }
+
             .slider0{
                 transition: opacity 1.5s ease;
                 cursor: e-resize;
@@ -262,17 +268,11 @@
                 transition: opacity 1.5s ease;
                 cursor: e-resize;
             }
-            .slider2{
-                opacity: 0;
-                transform: translate(0%, -200%);
-                transition: opacity 1.5s ease;
-                cursor: e-resize;
-            }
 
             .phototexts{
                 position: absolute;
                 color: rgba(255, 255, 255, 0.485);
-                top: 28%;
+                top: 18.5%;
                 left: 20%;
                 width: 100%;
                 transition: all 2s ease;
@@ -338,6 +338,57 @@
                         display: none;
                     }
                 }
+                @media screen and (max-width: 1400px) {
+                    .image1{
+                        width: 450px;
+                        height: 270px;
+                    }
+                    .img2 {
+                        height: 681px;
+                    }
+                    .slider1{
+                        width: 450px;
+                        height: 270px;
+                    }
+                    .allimages {
+                        padding-top: 30%;
+                        padding-bottom: 9%;
+                        padding-left: 31%;
+                        padding-right: 30%;
+                    }
+                    .phototexts{
+                        position: absolute;
+                        color: rgba(255, 255, 255, 0.485);
+                        top: 17.5%;
+                        left: 20%;
+                        width: 100%;
+                        transition: all 2s ease;
+                        z-index: 100;
+                        pointer-events: none;
+                    }
+                    .img1text, .img2text, .img3text, .img4text, .img5text {
+                        position: absolute;
+                        opacity: 0;
+                        font-weight: bold;
+                        font-size: 2.4rem;
+                        transition: all 3s ease;
+                    }
+                    .img2text{
+                        left: 9%;
+                    }
+                    .img3text{
+                        left: 2%;
+                    }
+                    .img4text{
+                        left: 8.5%;
+                    }
+                    .img5text{
+                        left: 8%;
+                    }
+                    .about_text{
+                        margin-top: -7%;
+                    }
+                }
 
         </style>
 
@@ -382,20 +433,20 @@
                     <div class="projects">
                         <div class="projectstry">
                         <div class="img1 allimages">
-                            <img src="certi.png" alt="" class="image1" width="750px" height="450px"/>
+                            <img src="certi.png" alt="" class="image1" />
                         </div>
                         <div class="img2 allimages">
-                            <img src="1.png" alt="" class="image1 slider0" width="750px" height="450px" style="visibility: visible;"/>
-                            <img src="2.png" alt="" class="slider1" width="750px" height="450px" style="visibility: hidden;"/>
+                            <img src="1.png" alt="" class="image1 slider0" style="visibility: visible;"/>
+                            <img src="2.png" alt="" class="slider1" style="visibility: hidden;"/>
                         </div>
                         <div class="img3 allimages">
-                            <video src="health.mp4" id="vid" class="image1" width="750px" height="450px" autoplay muted loop></video>
+                            <video src="health.mp4" id="vid" class="image1" autoplay muted loop></video>
                         </div>
                         <div class="img4 allimages">
-                            <video src="simongame.mp4" id="vid" class="image1" width="750px" height="450px" autoplay muted loop></video>
+                            <video src="simongame.mp4" id="vid" class="image1" autoplay muted loop></video>
                         </div>
                         <div class="img5 allimages">
-                            <video src="dicegame.mp4" id="vid" class="image1" width="750px" height="450px" autoplay muted loop></video>
+                            <video src="dicegame.mp4" id="vid" class="image1" autoplay muted loop></video>
                         </div>
                     </div>
                 </div>
@@ -495,7 +546,7 @@
             main.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                 if(event.deltaY > 0){
-                        main.style.transform = "translateY(-900px)";
+                        main.style.transform = "translateY(-16.5%)";
                         content.style.opacity = "0";
                         projects.style.opacity = "1";
                         projects.style.display = "block";
@@ -527,8 +578,14 @@
             img1.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                 if(event.deltaY > 0){
-                    projects.style.transform ="translateY(-900px)";
-                    scrollcontainer.style.top = "218px";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){  
+                        projects.style.transform ="translateY(-20.3%)";
+                        scrollcontainer.style.top = "27.73%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-19.5%)";
+                        scrollcontainer.style.top = "27.73%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "2";}, 500);
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "1";
@@ -543,10 +600,16 @@
                     scrollline.style.display = "none";
                     scrollcontainer.style.opacity = "0";
                     scrollline.style.opacity = "0";
-                    scrollcontainer.style.top = "80px";
+                    scrollcontainer.style.top = "10.17%";
                     projects.style.opacity = "0";
-                    downarrow.style.transform = "translate(-7px, -2635px)";
-                    content.style.transform = "translate(-215px, -1406px)";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){
+                        downarrow.style.top = "12%";
+                        content.style.top = "6%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        downarrow.style.top = "14.5%";
+                        content.style.top = "8%";
+                    }
                     showTopName.style.opacity = "0";
                     setTimeout(function(){scrollcount.innerHTML = "1";}, 500);
                     setTimeout(function(){
@@ -565,9 +628,9 @@
             img2.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                 if(event.deltaY < 0){
-                    projects.style.transform = "translateY(0px)";
+                    projects.style.transform ="translateY(0px)";
+                    scrollcontainer.style.top = "10.17%";
                     setTimeout(function(){scrollcount.innerHTML = "1";}, 500);
-                    scrollcontainer.style.top = "80px";
                     img1txt.style.opacity = "1";
                     img2txt.style.opacity = "0";
                     img3txt.style.opacity = "0";
@@ -575,8 +638,14 @@
                     img5txt.style.opacity = "0";
                 }
                 if(event.deltaY > 0){
-                    projects.style.transform ="translateY(-1800px)";
-                    scrollcontainer.style.top = "350px";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){     
+                        projects.style.transform ="translateY(-40.5%)";
+                        scrollcontainer.style.top = "44.53%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-40%)";
+                        scrollcontainer.style.top = "44.53%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "3";}, 500);
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "0";
@@ -590,8 +659,14 @@
             imgthree.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                 if(event.deltaY > 0){
-                    projects.style.transform ="translateY(-2700px)";
-                    scrollcontainer.style.top = "484px";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){     
+                        projects.style.transform ="translateY(-60.5%)";
+                        scrollcontainer.style.top = "60.8%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-2700px)";
+                        scrollcontainer.style.top = "60.8%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "4";}, 500);
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "0";
@@ -600,9 +675,15 @@
                     img5txt.style.opacity = "0";
                 } 
                 if(event.deltaY < 0){
-                    projects.style.transform = "translateY(-900px)";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){  
+                        projects.style.transform ="translateY(-20.3%)";
+                        scrollcontainer.style.top = "27.73%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-19.5%)";
+                        scrollcontainer.style.top = "27.73%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "2";}, 500);
-                    scrollcontainer.style.top = "218px";
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "1";
                     img3txt.style.opacity = "0";
@@ -615,9 +696,15 @@
             img4.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                 if(event.deltaY < 0){
-                    projects.style.transform = "translateY(-1800px)";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){     
+                        projects.style.transform ="translateY(-40.5%)";
+                        scrollcontainer.style.top = "44.53%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-40%)";
+                        scrollcontainer.style.top = "44.53%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "3";}, 500);
-                    scrollcontainer.style.top = "350px";
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "0";
                     img3txt.style.opacity = "1";
@@ -625,8 +712,14 @@
                     img5txt.style.opacity = "0";
                 } 
                 if(event.deltaY > 0){
-                    projects.style.transform = "translateY(-3600px)";
-                    scrollcontainer.style.top = "630px";
+                    if(window.innerWidth > "800" || window.innerWidth < "1400"){     
+                        projects.style.transform ="translateY(-80.5%)";
+                        scrollcontainer.style.top = "79.5%";
+                    }
+                    if(window.innerWidth > "1400") {
+                        projects.style.transform ="translateY(-3600px)";
+                        scrollcontainer.style.top = "79.5%";
+                    }
                     setTimeout(function(){scrollcount.innerHTML = "5";}, 500);
                     img1txt.style.opacity = "0";
                     img2txt.style.opacity = "0";
@@ -641,9 +734,15 @@
             img5.addEventListener('wheel', function(event){
                 if(blockFunction){return;}else{
                     if(event.deltaY < 0){
-                        projects.style.transform = "translateY(-2700px)";
+                        if(window.innerWidth > "800" || window.innerWidth < "1400"){     
+                        projects.style.transform ="translateY(-60.5%)";
+                        scrollcontainer.style.top = "60.8%";
+                        }
+                        if(window.innerWidth > "1400") {
+                            projects.style.transform ="translateY(-2700px)";
+                            scrollcontainer.style.top = "60.8%";
+                        }
                         setTimeout(function(){scrollcount.innerHTML = "4";}, 500);
-                        scrollcontainer.style.top = "484px";
                         img1txt.style.opacity = "0";
                         img2txt.style.opacity = "0";
                         img3txt.style.opacity = "0";
